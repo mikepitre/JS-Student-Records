@@ -1,6 +1,10 @@
+'use strict';
+
 var message = '';
 var student;
 var search;
+var foundStudents = [];
+var flag = true;
 
 function print(message) {
   var outputDiv = document.getElementById('output');
@@ -15,19 +19,29 @@ function getStudentReport(student) {
   return report;
 }
 
-while (true) {
-  search = prompt("Enter a student's name to search for their info. You can also type 'quit' to exit the search.");
+while (flag) {
+  search = prompt('Enter a student name to search for their info. You can also type quit to exit the search.');
+
   if (search === null || search.toLowerCase() === 'quit') {
     break;
   }
+
   for (var i = 0; i < students.length; i++) {
-    student = students[i]
-    if (student.name === search) {
-      message = getStudentReport(student);
-      print(message);
+    student = students[i];
+    if (student.name.toLowerCase() === search.toLowerCase()) {
+      foundStudents.push(student);
     }
+  }
+  flag = false;
+}
+
+for (var i = 0; i < foundStudents.length; i++) {
+  if (foundStudents.length === 0){
+    message = 'This student does not exist.';
+  } else {
+    message += getStudentReport(foundStudents[i]);
   }
 }
 
-
+print(message);
 

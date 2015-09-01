@@ -28,6 +28,12 @@ var students = [
     track: 'High School',
     achievements: 5,
     points: 25
+  },
+  {
+    name: 'Mike',
+    track: 'Rails',
+    achievements: 200,
+    points: 3000
   }
 ];
 
