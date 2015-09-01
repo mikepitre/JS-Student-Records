@@ -1,10 +1,20 @@
 var message = '';
 var student;
+var search;
 
 function print(message) {
   var outputDiv = document.getElementById('output');
   outputDiv.innerHTML = message;
 };
+
+
+while (true) {
+  search = prompt("Enter a student's name to search for their info. You can also type 'quit' to exit the search.");
+  if (search.toLowerCase() === 'quit') {
+    break;
+  }
+}
+
 
 for (var i = 0; i < students.length; i++) {
   student = students[i]
@@ -13,5 +23,3 @@ for (var i = 0; i < students.length; i++) {
   message += '<p>Achievements: ' + student.achievements + '</p>';
   message += '<p>Points: ' + student.points + '</p>';
 };
-
-print(message);
