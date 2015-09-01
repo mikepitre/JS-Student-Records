@@ -1,32 +1,32 @@
 var students = []
   {
-    name: ,
-    track: ,
-    achievements: ,
-    points:
+    name: 'Mike',
+    track: 'Front End Development',
+    achievements: 50,
+    points: 1000
   },
   {
-    name: ,
-    track: ,
-    achievements: ,
-    points:
+    name: 'Bri',
+    track: 'PT',
+    achievements: 75 ,
+    points: 500
   },
   {
-    name: ,
-    track: ,
-    achievements: ,
-    points:
+    name: 'Peter',
+    track: 'Construction',
+    achievements: 200,
+    points: 10
   },
   {
-    name: ,
-    track: ,
-    achievements: ,
-    points:
+    name: 'Jackie',
+    track: 'Design',
+    achievements: 35,
+    points: 2000
   },
   {
-    name: ,
-    track: ,
-    achievements: ,
-    points:
+    name: 'Nina',
+    track: 'High School',
+    achievements: 5,
+    points: 25
   }
 ];
