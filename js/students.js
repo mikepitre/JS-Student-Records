@@ -1,4 +1,4 @@
-var students = []
+var students = [
   {
     name: 'Mike',
     track: 'Front End Development',
